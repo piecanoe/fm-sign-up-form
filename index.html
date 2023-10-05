@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
@@ -15,23 +15,26 @@
   </style>
 </head>
 <body>
+  <button id="try">Try it free 7 days then $20/mo. thereafter</button>
+  <div id="box">
+    <section class="panel" id="description">
+      <h1>Learn to code by watching others</h1>
+      <h2>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</h2> 
+    </section>
 
-  Learn to code by watching others
+    <section class="panel" id="form">
+      <form>
+        <input type="text" id="fname" name="firstname" placeholder="First Name">
+        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+        <input type="text" id="email" placeholder="Email Address">
+        <input type="text" id="password" placeholder="Password">
+      </form>
+      <button>Claim your free trial</button>
+      <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    </section>
+  </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
