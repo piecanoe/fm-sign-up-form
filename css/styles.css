@@ -2,29 +2,43 @@ html{
     box-sizing: border-box;
 }
 body {
-    background-image: url("/images/bg-intro-desktop.png");
-    background-color: hsl(0, 100%, 74%);
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: hsla(0, 100%, 74%);
     display: flex;
     flex-direction: column;
     font-family: "Poppins", "Helvetica", sans-serif;
-    margin: 0 60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:100vh;
+    margin: auto;
 }
 
-#top-button{
+#top-section{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    margin: 0 40px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) .2rem .2rem 5px);
+}
 
+section > div{
+    width: 500px;
+    height: 50px;
 }
 
 #trial{
-    width: 600px;
+    width: 500px;
     height: 50px;
     background-color: hsl(248, 32%, 49%);
     color: white;
     font-weight: 700;
-    border-radius: .5rem;
+    border-radius: .2rem;
+    margin-bottom: 30px;
+    border: none;
+}
+
+#trial #then{
+    font-weight: 100;
 }
 
 #box{
@@ -34,8 +48,8 @@ body {
 }
 
 #box .panel{
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
 }
@@ -49,15 +63,20 @@ body {
 
 h1{
     font-weight: 700;
-    font-size: 3rem;
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    line-height: 98%;
 }
 
 h2{
     font-weight: 400;
     font-size: .8rem;
+    margin-right: 50px;
 }
 
+#box #right{
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) .2rem .2rem 5px);
+}
 
 form{
     display: flex;
@@ -71,9 +90,19 @@ form{
 input{
     height: 40px;
     margin: 0 35px;
-    border: 1px solid hsl(246, 25%, 77%)
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: .2rem;
+    font-weight: 700;
+    padding: 0 20px;
 }
 
+::placeholder{
+    color: hsl(246, 25%, 77%);
+}
+
+input:focus::placeholder{
+    color: black;
+}
 
 #claim{
     background: hsl(154, 59%, 51%);
@@ -82,8 +111,9 @@ input{
     font-weight: 700;
     height: 40px;
     margin: 0 35px;
+    border-radius: .2rem;
     border: none;
-    border-radius: .5rem;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) .2rem .2rem 5px);
 }
 
 p{
@@ -91,9 +121,15 @@ p{
     font-size: .7rem;
     text-align: center;
     font-weight: 400;
+    margin-top: -15px;
 }
 
-span{
+#terms{
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+.attribution{
+    margin-top: 30px;
+    color: white;
 }
