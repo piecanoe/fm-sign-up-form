@@ -30,12 +30,16 @@
     </section>
 
     <section class="panel" id="right">
-      <form>
-        <input type="text" id="fname" name="firstname" placeholder="First Name">
-        <input type="text" id="lname" name="lastname" placeholder="Last Name">
-        <input type="text" id="email" placeholder="Email Address">
-        <input type="text" id="password" placeholder="Password">
-        <button id="claim">Claim your free trial</button>
+      <form id="form" action="/">
+        <input type="text" class="input" id="fname" name="firstname" placeholder="First Name">
+        <div class="error">First Name cannot be empty</div>
+        <input type="text" class="input" id="lname" name="lastname" placeholder="Last Name">
+        <div class="error">Last Name cannot be empty</div>
+        <input type="text" class="input" id="email" placeholder="Email Address">
+        <div class="error">Looks like this is not an email</div>
+        <input type="text" class="input" id="password" placeholder="Password">
+        <div class="error">Password cannot be empty</div>
+        <button id="submit">Claim your free trial</button>
         <p>By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span></p>
       </form>
     </section>
@@ -48,5 +52,7 @@
       Coded by <a href="https://karendu.netlify.com">Karen Du</a>.
     </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

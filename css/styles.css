@@ -87,7 +87,7 @@ form{
     border-radius: .5rem;
 }
 
-input{
+.input{
     height: 40px;
     margin: 0 35px;
     border: 1px solid hsl(246, 25%, 77%);
@@ -96,15 +96,12 @@ input{
     padding: 0 20px;
 }
 
-::placeholder{
-    color: hsl(246, 25%, 77%);
-}
 
-input:focus::placeholder{
+.input:focus::placeholder{
     color: black;
 }
 
-#claim{
+#submit{
     background: hsl(154, 59%, 51%);
     color: white;
     text-transform: uppercase;
@@ -133,3 +130,5 @@ p{
     margin-top: 30px;
     color: white;
 }
+
+
