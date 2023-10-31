@@ -33,7 +33,6 @@ section > div{
     color: white;
     font-weight: 700;
     border-radius: .2rem;
-    margin-bottom: 30px;
     border: none;
 }
 
@@ -49,7 +48,7 @@ section > div{
 
 #box .panel{
     width: 500px;
-    height: 450px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -76,13 +75,14 @@ h2{
 
 #box #right{
     filter: drop-shadow(rgba(0, 0, 0, 0.5) .2rem .2rem 5px);
+    justify-content: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 500px;
+    height: 550px;
     justify-content: space-evenly;
     border-radius: .5rem;
 }
@@ -101,21 +101,28 @@ form{
     color: black;
 }
 
+.error{
+    color: red;
+    text-align: right;
+    margin: -20px 35px;
+    font-size: .8rem;
+    font-style: italic;
+}
 #submit{
     background: hsl(154, 59%, 51%);
     color: white;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: .7rem;
     height: 40px;
     margin: 0 35px;
     border-radius: .2rem;
-    border: none;
-    filter: drop-shadow(rgba(0, 0, 0, 0.5) .2rem .2rem 5px);
+    border: .5px solid hsl(246, 25%, 77%);
 }
 
 p{
     color: hsl(246, 25%, 77%);
-    font-size: .7rem;
+    font-size: .65rem;
     text-align: center;
     font-weight: 400;
     margin-top: -15px;
